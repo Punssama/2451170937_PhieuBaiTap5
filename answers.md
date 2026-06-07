@@ -370,8 +370,3 @@ npx -y sass scss/style.scss scss/style.css
 - Desktop: chia layout rõ ràng, tận dụng không gian lớn bằng Grid + sidebar.
 
 ---
-
-## Ghi chú screenshots
-
-- Chụp 3 màn hình: 375px, 768px, 1440px.
-- Chụp thêm DevTools để thấy `@media` rules của trang đã chọn.
