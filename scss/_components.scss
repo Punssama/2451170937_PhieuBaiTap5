@@ -1,0 +1,83 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.site-header {
+  @include flex-center;
+  justify-content: space-between;
+  gap: $spacing-md;
+  padding: $spacing-md 0 $spacing-sm;
+}
+
+.brand {
+  color: $primary-color;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.hero-card,
+.product-card,
+.sidebar,
+.ads-bar {
+  @include surface-card;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-md;
+}
+
+.product-card {
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .product-body {
+    display: grid;
+    gap: $spacing-sm;
+    padding: $spacing-md;
+  }
+
+  &:hover {
+    transform: translateY(-8px);
+  }
+
+  &.featured {
+    border-color: $secondary-color;
+  }
+}
+
+.buy-btn {
+  @include flex-center;
+  min-height: 44px;
+  border-radius: 12px;
+  background: $primary-color;
+  color: #fff;
+  font-weight: 700;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-md;
+}
+
+@include respond-to($breakpoint-tablet) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@include respond-to($breakpoint-desktop) {
+  .page-layout {
+    grid-template-columns: 280px minmax(0, 1fr) 240px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

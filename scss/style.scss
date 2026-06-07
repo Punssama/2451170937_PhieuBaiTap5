@@ -1,0 +1,15 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'components';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font-primary;
+  color: $text-color;
+  background: #f5f7fb;
+  line-height: 1.6;
+}

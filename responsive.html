@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PBT 05 - Responsive Product Page</title>
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand-wrap">
+        <a class="brand" href="#">Phong Shop</a>
+        <p class="tagline">Responsive Product Page</p>
+      </div>
+
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+      <label class="nav-toggle-btn" for="nav-toggle" aria-label="Mở menu"
+        >☰</label
+      >
+
+      <nav class="site-nav">
+        <a href="#home">Trang chủ</a>
+        <a href="#products">Sản phẩm</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+    </header>
+
+    <main class="page-layout" id="home">
+      <aside class="sidebar" aria-label="Bộ lọc sản phẩm">
+        <h2>Bộ lọc</h2>
+        <div class="filter-group">
+          <h3>Danh mục</h3>
+          <label><input type="checkbox" checked /> Laptop</label>
+          <label><input type="checkbox" checked /> Điện thoại</label>
+          <label><input type="checkbox" checked /> Phụ kiện</label>
+        </div>
+
+        <div class="filter-group">
+          <h3>Mức giá</h3>
+          <label
+            ><input type="radio" name="price" checked /> Dưới 10 triệu</label
+          >
+          <label><input type="radio" name="price" /> 10 - 20 triệu</label>
+          <label><input type="radio" name="price" /> Trên 20 triệu</label>
+        </div>
+      </aside>
+
+      <section class="content-area" id="products">
+        <div class="hero-card">
+          <p class="eyebrow">Collection 2026</p>
+          <h1>Trang sản phẩm mobile-first</h1>
+          <p>
+            Bố cục chuyển đổi từ 1 cột trên mobile đến 4 cột trên desktop, đúng
+            yêu cầu breakpoint 768px và 1024px.
+          </p>
+        </div>
+
+        <section class="product-grid" aria-label="Danh sách sản phẩm">
+          <article class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80"
+              alt="Laptop"
+            />
+            <div class="product-body">
+              <h2>Laptop Pro 14</h2>
+              <p>Màn hình đẹp, pin tốt, phù hợp học tập và làm việc.</p>
+              <strong>24.990.000đ</strong>
+              <a class="buy-btn" href="#">Mua ngay</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80"
+              alt="Điện thoại"
+            />
+            <div class="product-body">
+              <h2>Smartphone X</h2>
+              <p>Camera đẹp, thiết kế mỏng, hỗ trợ sạc nhanh.</p>
+              <strong>18.590.000đ</strong>
+              <a class="buy-btn" href="#">Mua ngay</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=900&q=80"
+              alt="Tai nghe"
+            />
+            <div class="product-body">
+              <h2>Tai nghe Air</h2>
+              <p>Âm thanh trong trẻo, kết nối nhanh, pin ổn định.</p>
+              <strong>3.490.000đ</strong>
+              <a class="buy-btn" href="#">Mua ngay</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=900&q=80"
+              alt="Máy ảnh"
+            />
+            <div class="product-body">
+              <h2>Máy ảnh Mirrorless</h2>
+              <p>Gọn nhẹ, ảnh sắc nét, phù hợp sáng tạo nội dung.</p>
+              <strong>27.900.000đ</strong>
+              <a class="buy-btn" href="#">Mua ngay</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=900&q=80"
+              alt="Bàn phím"
+            />
+            <div class="product-body">
+              <h2>Bàn phím cơ</h2>
+              <p>Gõ êm, layout gọn, đèn RGB nổi bật.</p>
+              <strong>1.890.000đ</strong>
+              <a class="buy-btn" href="#">Mua ngay</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1526738549149-8e07eca6c147?auto=format&fit=crop&w=900&q=80"
+              alt="Đồng hồ"
+            />
+            <div class="product-body">
+              <h2>Đồng hồ thông minh</h2>
+              <p>Theo dõi sức khỏe, nhận thông báo, pin lâu.</p>
+              <strong>5.490.000đ</strong>
+              <a class="buy-btn" href="#">Mua ngay</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1480694313141-fce5e697ee25?auto=format&fit=crop&w=900&q=80"
+              alt="Loa"
+            />
+            <div class="product-body">
+              <h2>Loa Bluetooth</h2>
+              <p>Âm bass tốt, kết nối ổn định, thiết kế hiện đại.</p>
+              <strong>2.290.000đ</strong>
+              <a class="buy-btn" href="#">Mua ngay</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=900&q=80"
+              alt="Màn hình"
+            />
+            <div class="product-body">
+              <h2>Màn hình 27"</h2>
+              <p>Độ phân giải cao, góc nhìn rộng, màu sắc chuẩn.</p>
+              <strong>6.990.000đ</strong>
+              <a class="buy-btn" href="#">Mua ngay</a>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <aside class="ads-bar" aria-label="Quảng cáo">
+        <h2>Ads bar</h2>
+        <p>Khuyến mãi hôm nay giảm đến 35% cho đơn hàng đầu tiên.</p>
+        <div class="promo-box">
+          <span>Free ship</span>
+          <strong>Đơn từ 500k</strong>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <p>© 2026 Phong Shop - Footer hiển thị đầy đủ trên mọi breakpoint.</p>
+    </footer>
+  </body>
+</html>

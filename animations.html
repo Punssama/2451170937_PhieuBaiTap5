@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PBT 05 - Animations</title>
+    <link rel="stylesheet" href="animations.css" />
+  </head>
+  <body>
+    <main class="demo-page">
+      <section class="intro fade-up">
+        <p class="eyebrow">Transitions & Animations</p>
+        <h1>Hiệu ứng hover, spinner và fade-in</h1>
+        <p>Trang này chứng minh đủ 5 hiệu ứng bắt buộc của bài B2.</p>
+      </section>
+
+      <section class="spinner-panel fade-up">
+        <div class="spinner" aria-label="Đang tải"></div>
+        <p>Loading spinner</p>
+      </section>
+
+      <section class="product-grid">
+        <article class="product-card fade-up">
+          <div class="image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80"
+              alt="Laptop"
+            />
+          </div>
+          <div class="card-body">
+            <h2>Laptop Pro 14</h2>
+            <p>Hover để xem card nhấc lên, ảnh zoom và nút đổi màu.</p>
+            <a href="#" class="buy-btn">Mua ngay</a>
+          </div>
+        </article>
+
+        <article class="product-card fade-up">
+          <div class="image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80"
+              alt="Điện thoại"
+            />
+          </div>
+          <div class="card-body">
+            <h2>Smartphone X</h2>
+            <p>Hiệu ứng này dùng transition + transform trên toàn bộ card.</p>
+            <a href="#" class="buy-btn">Mua ngay</a>
+          </div>
+        </article>
+
+        <article class="product-card fade-up">
+          <div class="image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=900&q=80"
+              alt="Tai nghe"
+            />
+          </div>
+          <div class="card-body">
+            <h2>Tai nghe Air</h2>
+            <p>
+              Fade-in được gắn cho từng khối để tạo cảm giác xuất hiện khi cuộn.
+            </p>
+            <a href="#" class="buy-btn">Mua ngay</a>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
